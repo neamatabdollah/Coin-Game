@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Practice Time</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
+    <meta name="My Library" content="This is practice time" >
+    <meta name="Auther" content="Neamat-Abdollah" >
+    <meta name="description" content="Neamat Abdollah CV" >
+    <meta name="keywords" content="HTML, CSS, JavaScript, web, portfolio, developer, front-end ,cv, game card">
+    <meta name="robots" content="index,follow" >
+    <meta property="og:title" content="practice" >
+    <meta property="og:description" content="Game Card interact" >
+    <meta property="og:image" content="logo.png" >
+    <meta property="og:url" content="https://myurl.com" >
+    <meta property="og:type" content="website" >
+    <link rel="icon" type="image/x-icon" href="imgs/icon.png">   
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+  <body>
+    <div id="container">
+      <h1>Coins Game</h1><hr>
+      <button id="heads"
+        onclick="
+          playGame('heads');
+        ">
+        <img src="imgs/heads.png" alt="">
+      </button>
+  
+      <button id="tails"
+        onclick="
+        playGame('tails');
+        ">
+        <img src="imgs/tails.png" alt="">
+      </button><br>
+      <p>Head</p>
+      <p>Tail</p>
+      <br><br>
+  
+      <button id="reset"
+       onclick="
+        score.wins = 0;
+        score.losses = 0;
+        localStorage.removeItem('score');
+        alert(`Cleared!`);
+      ">
+      <img src="imgs/reset.png" alt="reset">
+      </button>  
+    </div>
+    
+
+    <script src="javascript.js"></script> 
+  </body>
+</html>
