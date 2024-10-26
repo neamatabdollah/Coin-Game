@@ -20,14 +20,14 @@
   <body>
     <div id="container">
       <h1>Coins Game</h1><hr>
-      <button id="heads"
+      <button type="button" title="headsButton" id="heads"
         onclick="
           playGame('heads');
         ">
         <img src="imgs/heads.png" alt="">
       </button>
   
-      <button id="tails"
+      <button type="button" title="tailsButton" id="tails"
         onclick="
         playGame('tails');
         ">
@@ -37,7 +37,7 @@
       <p>Tail</p>
       <br><br>
   
-      <button id="reset"
+      <button type="button" title="resetButton" id="reset"
        onclick="
         score.wins = 0;
         score.losses = 0;
